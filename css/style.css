@@ -11,10 +11,58 @@ body {
   padding: 40px 32px 40px 32px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .logo {
   margin-left: -17px;
-  margin-bottom: 40px;
   display: block;
+}
+
+.contacts {
+  max-width: 270px;
+  text-align: right;
+}
+
+.contacts a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__phone {
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 36px;
+}
+
+.contacts__phone::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+
+.contacts__email {
+  font-size: 20px;
+}
+
+.contacts__email:hover {
+  text-decoration: underline;
+}
+
+section:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .h1, h1 {
@@ -84,13 +132,13 @@ strong {
   font-size: 20px;
 }
 
-.section-services {
-  margin-top: 36px;
+.services-list {
+  column-count: 2;
 }
 
-.section-services__list {
-  column-count: 2;
-  margin-bottom: 40px;
+.section-services h2,
+.section-services .h2 {
+  margin-bottom: 16px;
 }
 
 .section-services__title {
@@ -100,11 +148,11 @@ strong {
 .section-services__item {
   display: inline-block;
   width: 90%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media  screen and (max-width: 767px) {
-  .section-services__list {
+  .services-list {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
   }
@@ -131,4 +179,13 @@ strong {
 
 .table-price__col:not(:last-child) {
   border-right: 2px solid;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__right {
+  padding-top: 40px;
 }
