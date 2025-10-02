@@ -39,6 +39,7 @@ body {
   font-weight: bold;
   position: relative;
   padding-left: 36px;
+  margin-bottom: 5px;
 }
 
 .contacts__phone::after {
@@ -156,13 +157,6 @@ strong {
   margin-top: 30px;
 }
 
-@media  screen and (max-width: 767px) {
-  .services-list {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-  }
-}
-
 .table-price {
   max-width: 640px;
   border: 2px solid;
@@ -213,4 +207,52 @@ strong {
 
 .address__right {
   padding-top: 40px;
+}
+
+
+@media  screen and (max-width: 767px) {
+
+.h1, h1,
+section .h2, 
+section h2 {
+  font-size: 32px;
+}
+
+  .services-list {
+    column-count: 1;
+  }
+
+  .header__container {
+    display: block;
+  }
+
+  .logo {
+    max-width: 175px;
+    margin-left: -12px;
+  }
+
+  .contacts {
+    text-align: left;
+    margin-top: 16px;
+  }
+  
+  .contacts__phone {
+    font-size: 22px;
+    padding-left: 28px;
+  }
+
+  .contacts__phone::after {
+    margin-top: -10px;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .address__container {
+    display: block;
+  }
+
+  .address__right {
+    padding-top: 15px;
+  }
 }
