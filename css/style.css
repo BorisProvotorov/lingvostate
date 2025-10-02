@@ -165,7 +165,7 @@ strong {
 .table-price__row {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
 }
 
 .table-price__col {
