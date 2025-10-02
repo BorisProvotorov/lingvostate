@@ -89,16 +89,18 @@ strong {
 }
 
 .section-services__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 60px 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 60px;
+  column-count: 2;
   margin-bottom: 40px;
 }
 
 .section-services__title {
   margin: 0;
+}
+
+.section-services__item {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 30px;
 }
 
 @media  screen and (max-width: 767px) {
