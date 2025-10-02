@@ -8,14 +8,14 @@ body {
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 32px 40px 32px;
+  padding: 0 32px 0 32px;
 }
 
-.header {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  padding: 20px 32px;
 }
 
 .logo {
@@ -61,8 +61,8 @@ body {
   text-decoration: underline;
 }
 
-section:not(:last-child) {
-  margin-bottom: 36px;
+section {
+  padding-bottom: 36px;
 }
 
 .h1, h1 {
@@ -93,7 +93,7 @@ section h2::after {
   content: "";
   width: 50px;
   height: 8px;
-  background-color: red;
+  background-color: #cd2f2f;
   bottom: 0;
   left: 0;
 }
@@ -101,6 +101,11 @@ section h2::after {
 p {
   font-size: 18px;
   line-height: 32px;
+  margin-bottom: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 ul {
@@ -181,7 +186,27 @@ strong {
   border-right: 2px solid;
 }
 
-.address {
+.section-welcome {
+  padding-top: 40px;
+}
+
+.header,
+.section-services,
+.fees {
+  background-color: #faf5e3;
+}
+
+.section-services {
+    border-top: 1px solid transparent;
+}
+
+.fees {
+  border-top: 1px solid transparent;
+  padding-bottom: 40px;
+  margin-bottom: 0 !important;
+}
+
+.address__container {
   display: flex;
   justify-content: space-between;
 }
