@@ -162,6 +162,11 @@ strong {
   border: 2px solid;
 }
 
+.table-price__row:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .table-price__row {
   display: -ms-grid;
   display: grid;
